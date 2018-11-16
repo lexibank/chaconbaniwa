@@ -3,14 +3,12 @@
     "dc:bibliographicCitation": "Chacon, T. C.; Gon\u00e7alves, A. G.; and da Silva, L. F (forthcoming): A diversidade lingu\u00edstica Aru\u00e1k no Alto Rio Negro em grava\u00e7\u00f5es da d\u00e9cada de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s] ",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:identifier": "https://github.com/lexibank/chaconbaniwa/",
-    "dc:license": [
-        "GPL-3.0",
-        "GNU General Public License v3.0 only",
-        "http://www.opensource.org/licenses/GPL-3.0"
-    ],
+    "dc:license": "http://www.opensource.org/licenses/GPL-3.0",
     "dc:source": "sources.bib",
     "dc:title": "The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s",
+    "dcat:accessURL": "https://github.com/lexibank/chaconbaniwa",
     "rdf:ID": "chaconbaniwa",
+    "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
     },
@@ -18,8 +16,8 @@
         {
             "dc:title": "environment",
             "properties": {
-                "glottolog_version": "v3.2-87-g800df1f",
-                "concepticon_version": "pyconcepticon-1.4.0-3-g5184141"
+                "glottolog_version": "pyglottolog-1.2.1-60-gf46bb64",
+                "concepticon_version": "pyconcepticon-1.4.0-39-g121e0c7"
             }
         }
     ],
@@ -207,7 +205,7 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "integer",
+                        "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },

@@ -20,6 +20,7 @@ class BDConcept(Concept):
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'chaconbaniwa'
     concept_class = BDConcept
 
     def cmd_download(self, **kw):

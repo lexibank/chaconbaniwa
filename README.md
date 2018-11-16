@@ -13,7 +13,7 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 
 
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
-![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
+![Concepticon: 97%](https://img.shields.io/badge/Concepticon-97%25-green.svg "Concepticon: 97%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 ![BIPA: 94%](https://img.shields.io/badge/BIPA-94%25-green.svg "BIPA: 94%")
 ![CLTS SoundClass: 94%](https://img.shields.io/badge/CLTS%20SoundClass-94%25-green.svg "CLTS SoundClass: 94%")
@@ -25,5 +25,5 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 - **Cognacy:** 2,010 cognates in 333 cognate sets
 - **Invalid lexemes:** 0
 - **Tokens:** 15,979
-- **Segments:** 98 (6 BIPA errors, 6 CTLS sound class errors, 92 CLTS modified)
+- **Segments:** 98 (6 BIPA errors, 6 CTLS sound class errors, 141 CLTS modified)
 - **Inventory size (avg):** 44.93

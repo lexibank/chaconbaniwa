@@ -120,14 +120,14 @@
 ## Words with invalid segments (up to 100 only)
 
 | ID | LANGUAGE | CONCEPT | FORM | SEGMENTS |
-|-----:|:-----------|:----------|:-----------|:---------------------------|
-| 107 | waliperi | back | nupaʰnɛpɛ | n u p <s> aʰ </s> n ɛ p ɛ |
-| 1078 | moliwene | know | waʰljẽtsa | w <s> aʰ </s> l j ẽ ts a |
-| 203 | hohoodene | bite | pihuɐ̃nⁱ | p i h u ɐ̃ <s> nⁱ </s> |
-| 2040 | kumadene2 | tie | nupaʐaːka | n u p a ʐ aː <s> ka </s> |
-| 2354 | oho | morning | teːwadzole | <s> teː </s> w a d z o l e |
-| 911 | moliwene | hear | iʰmɛ̃tsɯ | <s> iʰ </s> m ɛ̃ ts ɯ |
-| 956 | moliwene | hit | pɐ̃ʰj̃akani | p <s> ɐ̃ʰ </s> j̃ a k a n i |
+|:-----------------|:-----------|:----------|:-----------|:---------------------------|
+| hohoodene-bite-1 | hohoodene | bite | pihuɐ̃nⁱ | p i h u ɐ̃ <s> nⁱ </s> |
+| kumadene2-tie-1 | kumadene2 | tie | nupaʐaːka | n u p a ʐ aː <s> ka </s> |
+| moliwene-hear-1 | moliwene | hear | iʰmɛ̃tsɯ | <s> iʰ </s> m ɛ̃ ts ɯ |
+| moliwene-hit-1 | moliwene | hit | pɐ̃ʰj̃akani | p <s> ɐ̃ʰ </s> j̃ a k a n i |
+| moliwene-know-1 | moliwene | know | waʰljẽtsa | w <s> aʰ </s> l j ẽ ts a |
+| oho-morning-2 | oho | morning | teːwadzole | <s> teː </s> w a d z o l e |
+| waliperi-back-1 | waliperi | back | nupaʰnɛpɛ | n u p <s> aʰ </s> n ɛ p ɛ |
 
 (7 rows)
 

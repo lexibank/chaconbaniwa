@@ -11,9 +11,9 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 ## Statistics
 
 
-
+[![Build Status](https://travis-ci.org/None.svg?branch=master)](https://travis-ci.org/None)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
-![Concepticon: 97%](https://img.shields.io/badge/Concepticon-97%25-green.svg "Concepticon: 97%")
+![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 ![BIPA: 94%](https://img.shields.io/badge/BIPA-94%25-green.svg "BIPA: 94%")
 ![CLTS SoundClass: 94%](https://img.shields.io/badge/CLTS%20SoundClass-94%25-green.svg "CLTS SoundClass: 94%")
@@ -22,8 +22,9 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 - **Concepts:** 243
 - **Lexemes:** 2,354
 - **Synonymy:** 1.00
-- **Cognacy:** 2,010 cognates in 333 cognate sets
+- **Cognacy:** 2,354 cognates in 677 cognate sets (344 singletons)
+- **Cognate Diversity:** 0.21
 - **Invalid lexemes:** 0
 - **Tokens:** 15,979
-- **Segments:** 98 (6 BIPA errors, 6 CTLS sound class errors, 141 CLTS modified)
+- **Segments:** 98 (6 BIPA errors, 6 CTLS sound class errors, 92 CLTS modified)
 - **Inventory size (avg):** 44.93

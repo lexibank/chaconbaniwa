@@ -40,6 +40,7 @@ class Dataset(BaseDataset):
             "í": "í/i",
             "íː": "íː/iː",
             "iʰ": "i h",
+            "i̥":"i̥/i",
             "ka": "k a",
             "kw": "kʷ",  # the single instance is a labialized velar
             "nⁱ": "n i",

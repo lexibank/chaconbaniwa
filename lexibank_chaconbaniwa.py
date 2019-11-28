@@ -2,55 +2,77 @@ import attr
 import lingpy
 from clldutils.misc import slug
 from clldutils.path import Path
-from pylexibank.dataset import Concept
+from pylexibank import Concept
 from pylexibank.dataset import Dataset as BaseDataset
-from pylexibank.util import pb
+from pylexibank.util import progressbar
 
 
 @attr.s
-class BDConcept(Concept):
+class CustomConcept(Concept):
     Portuguese_Gloss = attr.ib(default=None)
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
     id = "chaconbaniwa"
-    concept_class = BDConcept
+    concept_class = CustomConcept
 
-    def cmd_download(self, **kw):
-        pass
+    def cmd_makecldf(self, args):
+        # add sources
+        args.writer.add_sources()
 
-    def cmd_install(self, **kw):
+        # add languages
+        languages = args.writer.add_languages(lookup_factory="Name")
 
-        wl = lingpy.Wordlist(self.raw.posix("Bruzzi_Granadillo.txt"))
+        # Hard-coded fixes to segment errors in raw source
+        segments = {
+            "aʰ": "a h",
+            "ɐ̃ʰ": "ɐ̃ h",
+            "iʰ": "i h",
+            "ka": "k a",
+            "nⁱ": "n i",
+            "teː": "t eː",
+        }
 
-        with self.cldf as ds:
-            ds.add_sources(*self.raw.read_bib())
-            for k in pb(wl, desc="wl-to-cldf"):
-                ds.add_language(
-                    ID=slug(wl[k, "doculect"]), Name=wl[k, "doculect"], Glottocode="bani1255"
+        # read wordlist with lingpy
+        wl_file = self.raw_dir / "Bruzzi_Granadillo.txt"
+        wl = lingpy.Wordlist(wl_file.as_posix())
+
+        # iterate over wordlist
+        concepts = {}
+        for idx in progressbar(wl, desc="makecldf"):
+            # Concepts need to be added one by one, due to the source struct
+            # Given that the source has mixed items and no internal index,
+            # we need to build the first item of `concept_cldf_id` manually
+            if wl[idx, "concept"] not in concepts:
+                concept_cldf_id = "%i_%s" % (
+                    len(concepts) + 1,
+                    slug(wl[idx, "concept"]),
                 )
 
-                ds.add_concept(
-                    ID=slug(wl[k, "concept"]),
-                    Name=wl[k, "concept"],
-                    Concepticon_ID=wl[k, "concepticon_id"] or "",
-                    Portuguese_Gloss=wl[k, "concept_portuguese"],
+                args.writer.add_concept(
+                    ID=concept_cldf_id,
+                    Name=wl[idx, "concept"],
+                    Concepticon_ID=wl[idx, "concepticon_id"] or "",
+                    Portuguese_Gloss=wl[idx, "concept_portuguese"],
                 )
 
-                for row in ds.add_lexemes(
-                    Language_ID=slug(wl[k, "doculect"]),
-                    Parameter_ID=slug(wl[k, "concept"]),
-                    Value=wl[k, "entrj_in_source"],
-                    Form=wl[k, "ipa"],
-                    Segments=wl[k, "tokens"],
-                    Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
-                ):
-                    cid = slug(wl[k, "concept"] + "-" + "{0}".format(wl[k, "cogid"]))
-                    ds.add_cognate(
-                        lexeme=row,
-                        Cognateset_ID=cid,
-                        Source=["Chacon2018"],
-                        Alignment=wl[k, "alignment"],
-                        Alignment_Source="Chacon2018",
-                    )
+                # only update `concepts` if key is not found
+                concepts[wl[idx, "concept"]] = concept_cldf_id
+
+            # write lexemes
+            lex = args.writer.add_form_with_segments(
+                Language_ID=languages[wl[idx, "doculect"]],
+                Parameter_ID=concepts[wl[idx, "concept"]],
+                Value=wl[idx, "entrj_in_source"],
+                Form=wl[idx, "ipa"],
+                Segments=" ".join(
+                    [segments.get(x, x) for x in wl[idx, "tokens"]]
+                ).split(),
+                Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
+            )
+
+            cid = "%s-%s" % (slug(wl[idx, "concept"]), wl[idx, "cogid"])
+            args.writer.add_cognate(
+                lexeme=lex, Cognateset_ID=cid, Source=["Chacon2018"]
+            )

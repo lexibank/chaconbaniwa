@@ -25,15 +25,11 @@ class Dataset(BaseDataset):
         languages = args.writer.add_languages(lookup_factory="Name")
 
         # add concepts
-        concepts = {}
-        for concept in self.concepts:
-            args.writer.add_concept(
-                ID=concept["ID"],
-                Name=concept["Gloss"],
-                Concepticon_ID=concept["Concepticon_ID"],
-                Portuguese_Gloss=concept["Portuguese_Gloss"],
-            )
-            concepts[concept["Gloss"]] = concept["ID"]
+        concepts = args.writer.add_concepts(
+            id_factory=lambda cpt: "%s_%s"
+            % (cpt.id.split("_")[0], slug(cpt.english)),
+            lookup_factory="Name",
+        )
 
         # Hard-coded fixes to segment errors in raw source
         segments = {

@@ -24,14 +24,32 @@ class Dataset(BaseDataset):
         # add languages
         languages = args.writer.add_languages(lookup_factory="Name")
 
+        # add concepts
+        concepts = {}
+        for concept in self.concepts:
+            args.writer.add_concept(
+                ID=concept["ID"],
+                Name=concept["Gloss"],
+                Concepticon_ID=concept["Concepticon_ID"],
+                Portuguese_Gloss=concept["Portuguese_Gloss"],
+            )
+            concepts[concept["Gloss"]] = concept["ID"]
+
         # Hard-coded fixes to segment errors in raw source
         segments = {
+            "áː": "áː/aː",
+            "âː": "âː/aː",
             "aʰ": "a h",
             "ɐ̃ʰ": "ɐ̃ h",
+            "í": "í/i",
+            "íː": "íː/iː",
             "iʰ": "i h",
             "ka": "k a",
+            "kw": "kʷ",  # the single instance is a labialized velar
             "nⁱ": "n i",
+            "óː": "óː/oː",
             "teː": "t eː",
+            "ú": "u/u",
         }
 
         # read wordlist with lingpy
@@ -39,27 +57,7 @@ class Dataset(BaseDataset):
         wl = lingpy.Wordlist(wl_file.as_posix())
 
         # iterate over wordlist
-        concepts = {}
         for idx in progressbar(wl, desc="makecldf"):
-            # Concepts need to be added one by one, due to the source struct
-            # Given that the source has mixed items and no internal index,
-            # we need to build the first item of `concept_cldf_id` manually
-            if wl[idx, "concept"] not in concepts:
-                concept_cldf_id = "%i_%s" % (
-                    len(concepts) + 1,
-                    slug(wl[idx, "concept"]),
-                )
-
-                args.writer.add_concept(
-                    ID=concept_cldf_id,
-                    Name=wl[idx, "concept"],
-                    Concepticon_ID=wl[idx, "concepticon_id"] or "",
-                    Portuguese_Gloss=wl[idx, "concept_portuguese"],
-                )
-
-                # only update `concepts` if key is not found
-                concepts[wl[idx, "concept"]] = concept_cldf_id
-
             # write lexemes
             lex = args.writer.add_form_with_segments(
                 Language_ID=languages[wl[idx, "doculect"]],
@@ -72,7 +70,8 @@ class Dataset(BaseDataset):
                 Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
             )
 
-            cid = "%s-%s" % (slug(wl[idx, "concept"]), wl[idx, "cogid"])
             args.writer.add_cognate(
-                lexeme=lex, Cognateset_ID=cid, Source=["Chacon2018"]
+                lexeme=lex,
+                Cognateset_ID=wl[idx, "cogid"],
+                Source=["Chacon2018"],
             )

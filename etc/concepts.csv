@@ -1,0 +1,244 @@
+ID,Gloss,Concepticon_ID,Concepticon_Gloss,Portuguese_Gloss
+1_grate,grate,3114,GRATE (SOMETHING),raspar
+2_hairy,hairy,,,piloso (peludo
+3_he,he,1211,HE,ele
+4_instrumental,instrumental,,,instrumental
+5_maniocflourinwater,manioc flour in water,,,chibe
+6_maniocsqueezer,manioc squeezer,,,tipiti
+7_goodmorning,good morning,,,bom dia
+8_riverchanel,river chanel,,,paranã
+9_porrige,porrige,,,mingau
+10_sand,sand,3460,BEACH,Praia
+11_above,above,1741,ABOVE,encima
+12_afternoon,afternoon,1807,AFTERNOON,tarde
+13_all,all,98,ALL,todos
+14_anaconda,anaconda,896,ANACONDA (WATER BOA),cobra-grande
+15_and,and,1577,AND,e
+16_animal,animal,619,ANIMAL,animal
+17_arm,arm,1673,ARM,braço
+18_ash,ash,646,ASH,cinza
+19_back,back,1291,BACK,costas
+20_bad,bad,1292,BAD,mal
+21_bark,bark,1204,BARK,casca
+22_alive,alive,1422,BE ALIVE,vivo
+23_born,born,1090,BE BORN,Nascer
+24_behind,behind,1686,BEHIND,atrás
+25_belly,belly,1251,BELLY,barriga
+26_below,below,1485,BELOW OR UNDER,em baixo
+27_big,big,1202,BIG,grande
+28_bird,bird,937,BIRD,pássaro
+29_bite,bite,1403,BITE,morder
+30_black,black,163,BLACK,preto
+31_blood,blood,946,BLOOD,sangue
+32_blow,blow,176,BLOW (WITH MOUTH),soprar
+33_dull,dull,379,BLUNT,embotado
+34_bone,bone,1394,BONE,osso
+35_boychild,"boy, child",2391,BOY OR SON,menino
+36_breast,breast,1402,BREAST,seio
+37_burn,burn,2102,BURN,queimar
+38_canoe,canoe,1970,CANOE,Canoa
+39_chest,chest,1592,CHEST,peito
+40_clean,clean,704,CLEAN,limpo
+41_cloud,cloud,1489,CLOUD,nuvem
+42_cold,cold,1287,COLD,frio
+43_come,come,1446,COME,vir
+44_cook,cook,1100,COOK (SOMETHING),Cozinhar
+45_corpse,corpse,767,CORPSE,Cadáver
+46_correct,correct,1725,CORRECT (RIGHT),correto
+47_count,count,1420,COUNT,contar
+48_cut,cut,1432,CUT,cortar
+49_dark,dark,706,DARK,escuro
+50_day,day,1260,DAY (24 HOURS),dia
+51_devil,devil,1973,DEMON,Diabo
+52_die,die,1494,DIE,morrer
+53_dig,dig,1418,DIG,cavar
+54_dirty,dirty,1230,DIRTY,sujo
+55_dog,dog,2009,DOG,cachorro
+56_drink,drink,1401,DRINK,beber
+57_dry,dry,1398,DRY,seco
+58_dust,dust,2,DUST,poeira
+59_ear,ear,1247,EAR,orelha
+60_earth,earth,1228,EARTH (SOIL),terra
+61_eat,eat,1336,EAT,comer
+62_egg,egg,744,EGG,ovo
+63_eye,eye,1248,EYE,olho
+64_fall,fall,1280,FALL,cair
+65_far,far,1406,FAR,longe
+66_grease,grease,323,FAT (ORGANIC SUBSTANCE),gordura
+67_father,father,1217,FATHER,pai
+68_afraid,afraid,1419,FEAR (BE AFRAID),ter medo
+69_feather,feather,1201,FEATHER,pena
+70_few,few,1242,FEW,poucos
+71_field,field,212,FIELD,roça
+72_fight,fight,1423,FIGHT,lutar
+73_nail,nail,1896,FINGERNAIL OR TOENAIL,unha
+74_fire,fire,221,FIRE,fogo
+75_fish,fish,227,FISH,peixe
+76_fishv,fish (v),2638,FISHING,Pescar
+77_five,five,493,FIVE,cinco
+78_meat,meat,2615,FLESH OR MEAT,carne
+79_float,float,1574,FLOAT,fllutuar
+80_flower,flower,239,FLOWER,flor
+81_fly,fly,1441,FLY (MOVE THROUGH AIR),voar
+82_fog,fog,249,FOG,neblina
+83_foot,foot,1301,FOOT,pé
+84_jungle,jungle,420,FOREST,selva
+85_four,four,1500,FOUR,quatro
+86_fruit,fruit,1507,FRUIT,fruta
+87_full,full,1429,FULL,cheio
+88_fur,fur,580,FUR,pelo
+89_girl,girl,1646,GIRL,Menina
+90_give,give,1447,GIVE,dar
+91_go,go,695,GO,ir
+92_good,good,1035,GOOD,bom
+93_herbgrass,"herb, grass",606,GRASS,"erva, capim"
+94_green,green,1425,GREEN,verde
+95_guts,guts,1334,GUTS,tripa
+96_hair,hair,2648,HAIR (HEAD),cabelo
+97_hammock,hammock,2019,HAMMOCK,rede
+98_hand,hand,1277,HAND,mão
+99_head,head,1256,HEAD,cabeça
+100_louse,louse,310,HEAD LOUSE,piolho
+101_hear,hear,1408,HEAR,ouvir
+102_heart,heart,1223,HEART,coração
+103_heavy,heavy,1210,HEAVY,pesado
+104_here,here,136,HERE,aqui
+105_hit,hit,1433,HIT,bater
+106_hold,hold,1448,HOLD,segurar
+107_horn,horn,1393,HORN (ANATOMY),chifre
+108_hot,hot,2272,HOT OR WARM,quente
+109_how,how,1239,HOW,como
+110_hunt,hunt,1435,HUNT,caçar
+111_husband,husband,1200,HUSBAND,marido
+112_i,i,1209,I,eu
+113_homeathome,home (at home),1460,IN,em casa
+114_in,in,1460,IN,em
+115_inside,inside,1606,INSIDE,dentro
+116_jaguar,jaguar,1250,JAGUAR,onça
+117_kill,kill,1417,KILL,matar
+118_knee,knee,1371,KNEE,joelho
+119_know,know,1410,KNOW (SOMETHING),saber
+120_lake,lake,624,LAKE,lago
+121_tapuru,tapuru,2640,LARVA,tapuru
+122_leaf,leaf,628,LEAF,folha
+123_left,left,244,LEFT,esquerdo
+124_leg,leg,1297,LEG,perna
+125_lying,lying,215,LIE DOWN,deitado
+126_lightv,light (v),737,LIGHT (IGNITE),acender
+127_lips,lips,478,LIP,lábios
+128_liver,liver,1224,LIVER,fígado
+129_long,long,1203,LONG,comprido
+130_man,man,1554,MAN,homem
+131_many,many,1198,MANY,muitos
+132_milk,milk,635,MILK,leite
+133_moon,moon,1313,MOON,lua
+134_morning,morning,1339,MORNING,manhã
+135_mother,mother,1216,MOTHER,mãe
+136_mountain,mountain,639,MOUNTAIN,serra
+137_mouth,mouth,674,MOUTH,boca
+138_name,name,1405,NAME,nome
+139_narrow,narrow,1267,NARROW,estreito
+140_navel,navel,1838,NAVEL,umbigo
+141_near,near,1942,NEAR,perto
+142_neck,neck,1333,NECK,pescoço
+143_new,new,1231,NEW,novo
+144_night,night,1233,NIGHT,noite
+145_no,no,1269,NO,não
+146_nose,nose,1221,NOSE,nariz
+147_old,old,1229,OLD,velho
+148_one,one,1493,ONE,um
+149_other,other,197,OTHER,outro
+150_path,path,2252,PATH,caminho
+151_people,people,789,PEOPLE,gente
+152_personcivilized,"person, civilized",2661,PEOPLE OR PERSON,Pessoa Civilizado
+153_pierce,pierce,398,PIERCE,furar
+154_play,play,1413,PLAY,jogar
+155_throw,throw,1413,PLAY,jogar
+156_pull,pull,1455,PULL,puxar
+157_push,push,1452,PUSH,empurrar
+158_rain,rain,658,RAIN (PRECIPITATION),chuva
+159_red,red,156,RED,vermelho
+160_right,right,1019,RIGHT,direito
+161_ripe,ripe,178,RIPE,maduro
+162_river,river,666,RIVER,rio
+163_stone,stone,668,ROCK,pedra
+164_root,root,670,ROOT,raiz
+165_rope,rope,1218,ROPE,corda
+166_rotten,rotten,1728,ROTTEN,podre
+167_round,round,1395,ROUND,redondo
+168_run,run,1519,RUN,correr
+169_saliva,saliva,1503,SALIVA,saliva
+170_salt,salt,1274,SALT,sal
+171_say,say,1458,SAY,dizer
+172_scratch,scratch,1436,SCRATCH,arranhar
+173_sea,sea,1474,SEA,mar
+174_see,see,1409,SEE,ver
+175_seed,seed,714,SEED,semente
+176_sew,sew,1457,SEW,coser
+177_sharp,sharp,1396,SHARP,afiado
+178_shoot,shoot,1172,SHOOT,atirar
+179_short,short,1645,SHORT,curto
+180_sing,sing,1261,SING,cantar
+181_sit,sit,1416,SIT,sentado
+182_skin,skin,763,SKIN,pele
+183_sky,sky,1732,SKY,céu
+184_sleep,sleep,1585,SLEEP,dormir
+185_small,small,1246,SMALL,pequeno
+186_smell,smell,1586,SMELL (PERCEIVE),cheirar
+187_smoke,smoke,778,SMOKE (EXHAUST),fumaça
+188_smooth,smooth,1234,SMOOTH,liso
+189_snake,snake,730,SNAKE,cobra
+190_soul,soul,811,SOUL,Alma
+191_split,split,1437,SPLIT,rachar
+192_squeeze,squeeze,1414,SQUEEZE,apertar
+193_standing,standing,1442,STAND,de pé
+194_star,star,1430,STAR,estrela
+195_straight,straight,1404,STRAIGHT,reto
+196_suck,suck,1421,SUCK,chupar
+197_sun,sun,1343,SUN,sol
+198_swellup,swell up,1573,SWELL,inchar
+199_swim,swim,1439,SWIM,nadar
+200_tail,tail,1220,TAIL,rabo
+201_tell,tell,1711,TELL,dizer
+202_that,that,78,THAT,aquele
+203_there,there,1937,THERE,ali
+204_they,they,817,THEY,eles
+205_thick,thick,1244,THICK,grosso
+206_thin,thin,2308,THIN,fino
+207_skinny,skinny,1400,THIN (SLIM),Magro
+208_think,think,2271,THINK,pensar
+209_this,this,1214,THIS,este
+210_you,you,1215,THOU,tu
+211_three,three,492,THREE,três
+212_tie,tie,1917,TIE,amarrar
+213_tongue,tongue,1205,TONGUE,língua
+214_tooth,tooth,1380,TOOTH,dente
+215_hometohome,home (to home),2754,TOWARDS,casa (para casa
+216_tree,tree,906,TREE,árvore
+217_turn,turn,1588,TURN,virar
+218_two,two,1498,TWO,dois
+219_vine,vine,343,VINE,cipo
+220_vomit,vomit,1278,VOMIT,vomitar
+221_walk,walk,1443,WALK,andar
+222_wash,wash,1453,WASH,lavar
+223_water,water,948,WATER,água
+224_we,we,1212,WE,nós
+225_wet,wet,1726,WET,molhado
+226_what,what,1236,WHAT,que cousa
+227_when,when,1238,WHEN,quando
+228_where,where,1237,WHERE,onde
+229_white,white,1335,WHITE,branco
+230_who,who,1235,WHO,quem
+231_why,why,1270,WHY,porque
+232_wide,wide,1243,WIDE,largo
+233_wife,wife,1199,WIFE,esposa
+234_wind,wind,960,WIND,vento
+235_wing,wing,1257,WING,asa
+236_withpedro,with pedro,1340,WITH,com Pedro
+237_woman,woman,962,WOMAN,mulher
+238_worm,worm,1219,WORM,vermelho
+239_year,year,1226,YEAR,ano
+240_yellow,yellow,1424,YELLOW,amarelo
+241_yes,yes,1268,YES,sim
+242_youpl,you pl.,1213,YOU,vós
+243_boyyoungman,"boy, young man",76,YOUNG MAN,rapaz

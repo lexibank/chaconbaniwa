@@ -2,55 +2,73 @@ import attr
 import lingpy
 from clldutils.misc import slug
 from clldutils.path import Path
-from pylexibank.dataset import Concept
+from pylexibank import Concept
 from pylexibank.dataset import Dataset as BaseDataset
-from pylexibank.util import pb
+from pylexibank.util import progressbar
 
 
 @attr.s
-class BDConcept(Concept):
+class CustomConcept(Concept):
     Portuguese_Gloss = attr.ib(default=None)
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
     id = "chaconbaniwa"
-    concept_class = BDConcept
+    concept_class = CustomConcept
 
-    def cmd_download(self, **kw):
-        pass
+    def cmd_makecldf(self, args):
+        # add sources
+        args.writer.add_sources()
 
-    def cmd_install(self, **kw):
+        # add languages
+        languages = args.writer.add_languages(lookup_factory="Name")
 
-        wl = lingpy.Wordlist(self.raw.posix("Bruzzi_Granadillo.txt"))
+        # add concepts
+        concepts = args.writer.add_concepts(
+            id_factory=lambda cpt: "%s_%s"
+            % (cpt.id.split("_")[0], slug(cpt.english)),
+            lookup_factory="Name",
+        )
 
-        with self.cldf as ds:
-            ds.add_sources(*self.raw.read_bib())
-            for k in pb(wl, desc="wl-to-cldf"):
-                ds.add_language(
-                    ID=slug(wl[k, "doculect"]), Name=wl[k, "doculect"], Glottocode="bani1255"
-                )
+        # Hard-coded fixes to segment errors in raw source
+        segments = {
+            "áː": "áː/aː",
+            "âː": "âː/aː",
+            "aʰ": "a h",
+            "ɐ̃ʰ": "ɐ̃ h",
+            "í": "í/i",
+            "íː": "íː/iː",
+            "iʰ": "i h",
+            "i̥":"i̥/i",
+            "ka": "k a",
+            "kw": "kʷ",  # the single instance is a labialized velar
+            "nⁱ": "n i",
+            "óː": "óː/oː",
+            "teː": "t eː",
+            "ú": "u/u",
+        }
 
-                ds.add_concept(
-                    ID=slug(wl[k, "concept"]),
-                    Name=wl[k, "concept"],
-                    Concepticon_ID=wl[k, "concepticon_id"] or "",
-                    Portuguese_Gloss=wl[k, "concept_portuguese"],
-                )
+        # read wordlist with lingpy
+        wl_file = self.raw_dir / "Bruzzi_Granadillo.txt"
+        wl = lingpy.Wordlist(wl_file.as_posix())
 
-                for row in ds.add_lexemes(
-                    Language_ID=slug(wl[k, "doculect"]),
-                    Parameter_ID=slug(wl[k, "concept"]),
-                    Value=wl[k, "entrj_in_source"],
-                    Form=wl[k, "ipa"],
-                    Segments=wl[k, "tokens"],
-                    Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
-                ):
-                    cid = slug(wl[k, "concept"] + "-" + "{0}".format(wl[k, "cogid"]))
-                    ds.add_cognate(
-                        lexeme=row,
-                        Cognateset_ID=cid,
-                        Source=["Chacon2018"],
-                        Alignment=wl[k, "alignment"],
-                        Alignment_Source="Chacon2018",
-                    )
+        # iterate over wordlist
+        for idx in progressbar(wl, desc="makecldf"):
+            # write lexemes
+            lex = args.writer.add_form_with_segments(
+                Language_ID=languages[wl[idx, "doculect"]],
+                Parameter_ID=concepts[wl[idx, "concept"]],
+                Value=wl[idx, "entrj_in_source"],
+                Form=wl[idx, "ipa"],
+                Segments=" ".join(
+                    [segments.get(x, x) for x in wl[idx, "tokens"]]
+                ).split(),
+                Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
+            )
+
+            args.writer.add_cognate(
+                lexeme=lex,
+                Cognateset_ID=wl[idx, "cogid"],
+                Source=["Chacon2018"],
+            )

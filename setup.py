@@ -2,6 +2,9 @@ from setuptools import setup
 import sys
 import json
 
+with open("metadata.json") as fp:
+    metadata = json.load(fp)
+
 setup(
     name="lexibank_chaconbaniwa",
     description=metadata["title"],

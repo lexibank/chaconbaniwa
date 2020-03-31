@@ -29,3 +29,11 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 - **Tokens:** 15,986
 - **Segments:** 91 (0 BIPA errors, 0 CTLS sound class errors, 91 CLTS modified)
 - **Inventory size (avg):** 44.36
+
+# Contributors
+
+Name | GitHub user | Role
+--- | --- | ---
+Johann-Mattis List | @LinguList | maintainer
+
+

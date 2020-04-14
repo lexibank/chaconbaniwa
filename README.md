@@ -1,10 +1,10 @@
-# The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s
+# CLDF dataset derived from Chacon et al.'s "Diversity of Arawakan Languages" from 2019
 
 Cite the source dataset as
 
-> Chacon, T. C.; Gonçalves, A. G.; and da Silva, L. F (forthcoming): A diversidade linguística Aruák no Alto Rio Negro em gravações da década de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s] 
+> Chacon, T. C.; Gonçalves, A. G.; and da Silva, L. F (2019): A diversidade linguística Aruák no Alto Rio Negro em gravações da década de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Función, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.
 
-This dataset is licensed under a GPL-3.0 license
+This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
 
 Available online at https://github.com/lexibank/chaconbaniwa/
 
@@ -32,8 +32,11 @@ Available online at https://github.com/lexibank/chaconbaniwa/
 
 # Contributors
 
-Name | GitHub user | Role
---- | --- | ---
-Johann-Mattis List | @LinguList | maintainer
+Name | GitHub user | Description | Role
+--- | --- | --- | --- 
+Johann-Mattis List | @LinguList | maintainer | Author
+Tiago Tresoldi | @Tresoldi | maintainer | Author
+Christoph Rzymski | @chrzyki | maintainer | Author
+Thiago Costa Chacon | @thiagochacon | maintainer | Author, DataCollector
 
 

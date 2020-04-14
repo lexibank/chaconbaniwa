@@ -70,5 +70,5 @@ class Dataset(BaseDataset):
             args.writer.add_cognate(
                 lexeme=lex,
                 Cognateset_ID=wl[idx, "cogid"],
-                Source=["Chacon2018"],
+                Source=["Chacon2019"],
             )

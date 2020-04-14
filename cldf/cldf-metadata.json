@@ -1,45 +1,45 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Chacon, T. C.; Gon\u00e7alves, A. G.; and da Silva, L. F (forthcoming): A diversidade lingu\u00edstica Aru\u00e1k no Alto Rio Negro em grava\u00e7\u00f5es da d\u00e9cada de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s] ",
+    "dc:bibliographicCitation": "Chacon, T. C.; Gon\u00e7alves, A. G.; and da Silva, L. F (2019): A diversidade lingu\u00edstica Aru\u00e1k no Alto Rio Negro em grava\u00e7\u00f5es da d\u00e9cada de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Funci\u00f3n, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:identifier": "https://github.com/lexibank/chaconbaniwa/",
     "dc:isVersionOf": null,
-    "dc:license": "http://www.opensource.org/licenses/GPL-3.0",
+    "dc:license": "https://creativecommons.org/licenses/by-nc/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
-    "dc:title": "The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s",
+    "dc:title": "CLDF dataset derived from Chacon et al.'s \"Diversity of Arawakan Languages\" from 2019",
     "dcat:accessURL": "https://github.com/lexibank/chaconbaniwa",
     "prov:wasDerivedFrom": [
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/chaconbaniwa",
-            "dc:created": "v1.0.1-9-g6fd2841"
+            "dc:created": "v1.0.1-11-gb03075e"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Glottolog",
-            "rdf:about": "https://github.com/glottolog/glottolog",
-            "dc:created": "v4.1"
+            "rdf:about": "https://github.com/lingulist/glottolog-data",
+            "dc:created": "v4.0"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Concepticon",
             "rdf:about": "https://github.com/concepticon/concepticon-data",
-            "dc:created": "v2.3.0"
+            "dc:created": "v2.3.0-39-g43f0f34"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "CLTS",
-            "rdf:about": "https://github.com/cldf-clts/clts",
+            "rdf:about": "https://github.com/cldf-clts/clts/",
             "dc:created": "v1.4"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.7.6"
+            "dc:description": "3.8.2"
         },
         {
             "dc:title": "python-packages",
@@ -115,6 +115,14 @@
                     {
                         "datatype": "boolean",
                         "name": "Loan"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Graphemes"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Profile"
                     }
                 ],
                 "foreignKeys": [

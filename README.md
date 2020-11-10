@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > Chacon, T. C.; Gonçalves, A. G.; and da Silva, L. F (2019): A diversidade linguística Aruák no Alto Rio Negro em gravações da década de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Función, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.
 
-This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
+This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://github.com/lexibank/chaconbaniwa/
 

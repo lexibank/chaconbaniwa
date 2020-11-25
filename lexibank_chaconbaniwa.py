@@ -47,6 +47,7 @@ class Dataset(BaseDataset):
             "óː": "óː/oː",
             "teː": "t eː",
             "ú": "u/u",
+            '#': '+'
         }
 
         # read wordlist with lingpy

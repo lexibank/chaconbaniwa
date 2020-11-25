@@ -33,6 +33,6 @@
     "upload_type": "dataset",
     "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Chacon, T. C.; Gon\u00e7alves, A. G.; and da Silva, L. F (2019): A diversidade lingu\u00edstica Aru\u00e1k no Alto Rio Negro em grava\u00e7\u00f5es da d\u00e9cada de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Funci\u00f3n, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.</p>\n</blockquote>",
     "license": {
-        "id": "CC-BY-NC-4.0"
+        "id": "CC-BY-4.0"
     }
 }

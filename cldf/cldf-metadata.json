@@ -8,7 +8,7 @@
     ],
     "dc:identifier": "https://github.com/lexibank/chaconbaniwa/",
     "dc:isVersionOf": null,
-    "dc:license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "CLDF dataset derived from Chacon et al.'s \"Diversity of Arawakan Languages\" from 2019",
@@ -18,7 +18,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/chaconbaniwa",
-            "dc:created": "v1.0.1-16-g48c47d5"
+            "dc:created": "v1.0.1-17-g56f9959"
         },
         {
             "rdf:type": "prov:Entity",

@@ -16,5 +16,5 @@ setup(
     entry_points={
         "lexibank.dataset": ["chaconbaniwa=lexibank_chaconbaniwa:Dataset"]
     },
-    install_requires=["pylexibank>=2.1"],
+    install_requires=["pylexibank>=3.0"],
 )

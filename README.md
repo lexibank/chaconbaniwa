@@ -1,8 +1,16 @@
 # CLDF dataset derived from Chacon et al.'s "Diversity of Arawakan Languages" from 2019
 
-Cite the source dataset as
+[![CLDF validation](https://github.com/lexibank/chaconbaniwa/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/chaconbaniwa/actions?query=workflow%3ACLDF-validation)
 
-> Chacon, T. C.; Gonçalves, A. G.; and da Silva, L. F (2019): A diversidade linguística Aruák no Alto Rio Negro em gravações da década de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Función, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.
+## How to cite
+
+If you use these data please cite
+- the original source
+  > Chacon, T. C.; Gonçalves, A. G.; and da Silva, L. F (2019): A diversidade linguística Aruák no Alto Rio Negro em gravações da década de 1950 [The diversity of Arawakan languages from the upper Rio Negro in recordings from the 1950s]. Forma y Función, 32.2, 41-67. DOI: 10.15446/fyf.v32n2.80814.
+- the derived dataset using the DOI of the [particular released version](../../releases/) you were using
+
+## Description
+
 
 This dataset is licensed under a CC-BY-4.0 license
 
@@ -14,7 +22,7 @@ Conceptlists in Concepticon:
 ## Statistics
 
 
-[![Build Status](https://travis-ci.org/lexibank/chaconbaniwa.svg?branch=master)](https://travis-ci.org/lexibank/chaconbaniwa)
+[![CLDF validation](https://github.com/lexibank/chaconbaniwa/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/chaconbaniwa/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 98%](https://img.shields.io/badge/Concepticon-98%25-green.svg "Concepticon: 98%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
@@ -43,3 +51,10 @@ Christoph Rzymski | @chrzyki | maintainer | Other
 Thiago Costa Chacon | @thiagochacon | maintainer | Author, DataCollector
 
 
+
+
+## CLDF Datasets
+
+The following CLDF datasets are available in [cldf](cldf):
+
+- CLDF [Wordlist](https://github.com/cldf/cldf/tree/master/modules/Wordlist) at [cldf/cldf-metadata.json](cldf/cldf-metadata.json)

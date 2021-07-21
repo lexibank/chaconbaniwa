@@ -17,4 +17,5 @@ setup(
         "lexibank.dataset": ["chaconbaniwa=lexibank_chaconbaniwa:Dataset"]
     },
     install_requires=["pylexibank>=3.0"],
+    extras_require={"test": ["pytest-cldf"]},
 )

@@ -1,4 +1,5 @@
 import attr
+from collections import defaultdict
 import lingpy
 from clldutils.misc import slug
 from clldutils.path import Path
@@ -21,8 +22,18 @@ class Dataset(BaseDataset):
         # add sources
         args.writer.add_sources()
 
-        # add languages
-        languages = args.writer.add_languages(lookup_factory="Name")
+        # add language
+        languages = {}
+        sources = defaultdict()
+        for language in self.languages:
+            args.writer.add_language(
+                    ID=language["ID"],
+                    Name=language["Name"],
+                    Glottocode=language["Glottocode"]
+                    )
+            languages[language["Name"]] = language["ID"]
+            sources[language["Name"]] = language["Source"]
+        args.log.info("added languages")
 
         # add concepts
         concepts = args.writer.add_concepts(
@@ -40,7 +51,7 @@ class Dataset(BaseDataset):
             "í": "í/i",
             "íː": "íː/iː",
             "iʰ": "i h",
-            "i̥":"i̥/i",
+            "i̥": "i̥/i",
             "ka": "k a",
             "kw": "kʷ",  # the single instance is a labialized velar
             "nⁱ": "n i",
@@ -60,12 +71,12 @@ class Dataset(BaseDataset):
             lex = args.writer.add_form_with_segments(
                 Language_ID=languages[wl[idx, "doculect"]],
                 Parameter_ID=concepts[wl[idx, "concept"]],
-                Value=wl[idx, "entrj_in_source"],
+                Value=wl[idx, "entry_in_source"],
                 Form=wl[idx, "ipa"],
                 Segments=" ".join(
                     [segments.get(x, x) for x in wl[idx, "tokens"]]
                 ).split(),
-                Source=["granadillo_ethnographic_2006", "silva_discoteca_1961"],
+                Source=sources[wl[idx, "doculect"]]
             )
 
             args.writer.add_cognate(
